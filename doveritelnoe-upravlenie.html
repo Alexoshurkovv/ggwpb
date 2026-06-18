@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Доверительное управление бизнесом — УК КОМПЕТЕНС</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ШАПКА (та же, что на главной) -->
+    <header>
+        <nav>
+            <div class="logo" onclick="window.location.href='index.html'">
+                <img src="grok-image-add55bf4-f81c-4eb2-9212-55ab5f1e3a64-removebg-preview.png" alt="УК КОМПЕТЕНС">
+            </div>
+            <span class="slogan">Ваш стратегический партнер</span>
+            <button class="burger" aria-label="Открыть меню">☰</button>
+        </nav>
+    </header>
+
+    <!-- HERO УСЛУГИ -->
+    <section class="hero" style="min-height: 60vh; padding-top: 120px;">
+        <div class="container">
+            <h1>Доверительное управление бизнесом</h1>
+            <p class="hero-subtitle" style="max-width: 900px;">
+                Передача операционного управления с сохранением права собственности
+            </p>
+        </div>
+    </section>
+
+    <!-- ОСНОВНОЙ КОНТЕНТ -->
+    <section class="section-white">
+        <div class="container" style="max-width: 900px;">
+            
+            <p style="font-size: 1.2rem; line-height: 1.8; margin-bottom: 40px;">
+                Управляющая компания «Компетенс» предлагает услугу доверительного управления бизнесом 
+                для собственников зрелых компаний с оборотом от 50 млн рублей в год.
+            </p>
+
+            <p style="font-size: 1.2rem; line-height: 1.8; margin-bottom: 50px;">
+                В рамках договора доверительного управления (Глава 53 Гражданского кодекса РФ) 
+                мы принимаем на себя все функции по оперативному управлению компанией, 
+                при этом вы сохраняете полный контроль как собственник.
+            </p>
+
+            <h3 style="font-size: 1.6rem; margin-bottom: 20px; color: #0A2540;">Что входит в доверительное управление:</h3>
+            <ul style="font-size: 1.15rem; line-height: 1.9; margin-bottom: 50px; padding-left: 25px;">
+                <li>Назначение профессионального управляющего директора и операционной команды</li>
+                <li>Оптимизация организационной структуры и бизнес-процессов</li>
+                <li>Управление финансами, продажами, закупками и персоналом</li>
+                <li>Стратегическое планирование и контроль ключевых показателей</li>
+                <li>Ежемесячная управленческая отчётность и прозрачные выплаты собственнику</li>
+            </ul>
+
+            <h3 style="font-size: 1.6rem; margin-bottom: 20px; color: #0A2540;">Преимущества для собственника:</h3>
+            <ul style="font-size: 1.15rem; line-height: 1.9; margin-bottom: 50px; padding-left: 25px;">
+                <li>Освобождение от оперативного управления без потери контроля</li>
+                <li>Стабильный пассивный доход</li>
+                <li>Профессиональное развитие бизнеса</li>
+                <li>Снижение операционных рисков</li>
+                <li>Возможность сосредоточиться на стратегических вопросах и личных целях</li>
+            </ul>
+
+            <div style="background: #f0f7f0; padding: 30px; border-radius: 16px; margin: 50px 0;">
+                <p style="font-size: 1.3rem; font-weight: 600; color: #0A2540; margin-bottom: 10px;">
+                    Срок сотрудничества: от 12 месяцев
+                </p>
+            </div>
+
+            
+
+        </div>
+    </section>
+
+    <!-- ФУТЕР -->
+    <footer>
+        <div id="footer-container" class="footer-container">
+            <div class="footer-left">
+                <p><strong>ООО «УК КОМПЕТЕНС»</strong></p>
+                <p>Россия, 191040, г. Санкт-Петербург, пр. Лиговский, дом 72 лит А, оф. 4-Н</p>
+                <p>+7 (981) 925-48-15</p>
+                <p>info@icompetence.ru</p>
+                <p>© 2026 Все права защищены.</p>
+            </div>
+            <div class="footer-right">
+                <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a><a href="https://yandex.ru/maps/geo/ligovskiy_prospekt_72_podyezd_3/3128490255/?ll=30.356402%2C59.922075&utm_medium=mapframe&utm_source=maps&z=20.21" style="color:#eee;font-size:12px;position:absolute;top:14px;">Лиговский проспект, 72, подъезд 3 — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?ll=30.356402%2C59.922075&mode=poi&poi%5Bpoint%5D=30.356240%2C59.922094&utm_medium=mapframe&utm_source=maps&z=20.21" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>            </div>
+        </div>
+    </footer>
+
+    <!-- Модальное окно -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">✕</span>
+            <h2>Записаться на бесплатную диагностику</h2>
+            <form id="diagnostikaForm">
+                <input type="text" placeholder="Ваше имя" required>
+                <input type="tel" placeholder="Телефон" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Кратко опишите ситуацию с бизнесом" rows="4"></textarea>
+                <button type="submit">Отправить заявку</button>
+            </form>
+        </div>
+    </div>
+    <!-- Мобильное меню -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-content">
+            <a href="index.html#o-kompanii">О компании</a>
+            <a href="index.html#rezultaty">Результаты</a>
+            <a href="index.html#faq">Частые вопросы</a>
+            <a href="index.html#diagnostika">Записаться на диагностику</a>
+
+            <div class="menu-divider"></div>
+
+            <p class="menu-section-title">Услуги</p>
+            
+            <a href="doveritelnoe-upravlenie.html">Доверительное управление бизнесом</a>
+            <a href="antikrizis.html">Антикризисный консалтинг</a>
+            <a href="podgotovka-k-prodazhe.html">Подготовка бизнеса к продаже</a>
+            <a href="preemstvennost.html">Преемственность и передача бизнеса</a>
+            <a href="audit.html">Комплексный аудит бизнеса</a>
+            <a href="ved.html">Поддержка ВЭД</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
